@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --background_gradient: #a9f14a, #70f07a;
+    --header: #b7f5bb;
+    --h1: #3cad6f;
+    --background_section: #ecfcbc;
+    --button: #b7fb9c;
+    --hover:#96e079;
+    --box: #e9ffcc ;
+    --shadow_1: #0000003d;
+    --shadow_2: #00000030;
+    --button_text: #0f0f0f;
+    --border: #222222;
+    --footer:#7cd682;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, var(--background_gradient));
+    font-family: 'Montserrat', sans-serif;
+  }
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    background-color: var(--header);
+}
+
+main {
+    height: 100vh;
+    padding-bottom: 150px;
+    flex: 1 1 auto;
+    
+}
+.section_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: var(--background_section);
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 20px;
+    box-shadow: 0 12px 16px 0 var(--shadow_1), 0 17px 50px 0 var(--shadow_2);
+}
+  
+h1 {
+    color: var(--h1);
+    background-color: var(--background_text);
+    border-radius: 5px;
+    margin-top: 0; 
+}
+
+h2 {
+    margin: 0;
+    font-size: 20px;
+}
+  
+.bored_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 400px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-bottom: 0.625rem;
+    font-size: 1.125rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--box);
+    
+}
+
+.button {
+    cursor: pointer;
+    background-color: var(--button);
+    transition-duration: 0.4s;
+    color: var(--button_text);
+    border-radius: 5px;
+    border: 1px solid var(--border); 
+    font-size: 1.12rem;
+    padding: 0.3125rem 0.625rem;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+}
+  
+.button:hover {
+    background-color: var(--hover);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 40px;
+    background-color: var(--footer) ;  
+    font-size: 1.0625rem;
+}
+
+
+/* Responsive opp til mobil */
+@media (max-width: 425px) {
+   
+    .bored_card {
+        width: 240px;
+    }
+    .section_1 {
+        width: 270px;
+    }
+  }
