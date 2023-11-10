@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-    --background_gradient: #ddfdb3, #b7fb9c; /*#c4e29e, #89ee92;*/
+    --background_gradient: #ddfdb3, #b7fb9c;
     --header: #b7f5bb;
     --h1: #3cad6f;
     --background_section: #ecfcbc;
     --button: #b7fb9c;
     --hover:#96e079;
     --box: #e9ffcc ;
+    --setup: #0f0f0f;
+    --punchline: #0f0f0f;
     --shadow_1: #0000003d;
     --shadow_2: #00000030;
     --button_text: #0f0f0f;
@@ -25,7 +27,7 @@ body {
     margin: 0;
     background-image: linear-gradient(to right, var(--background_gradient));
     font-family: 'Montserrat', sans-serif;
-  }
+}
 
 header {
     display: flex;
@@ -43,6 +45,7 @@ main {
     align-items: center;
     
 }
+
 .section_1 {
     display: flex;
     flex-direction: column;
@@ -56,8 +59,6 @@ main {
   
 h1 {
     color: var(--h1);
-    background-color: var(--background_text);
-    border-radius: 5px;
     margin-top: 0; 
 }
 
@@ -70,17 +71,27 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center; 
+    align-items: center;
     width: 25rem;
-    height: 4.0625rem;
+    height: 12.5rem;
     border: 1px solid var(--border);
     border-radius: 10px;
-    padding: 1.25rem;
+    padding: 0.3125rem;
     gap: 0.3125rem;
     margin-bottom: 0.625rem;
     font-size: 1.125rem;
     font-family: 'Poppins', sans-serif;
     background-color: var(--box);
     overflow: auto;
+}
+
+.setup {
+    color: var(--setup);
+    font-weight: bold;
+}
+
+.punchline {
+    color: var(--punchline);
 }
 
 p {
@@ -122,8 +133,9 @@ footer {
    
     .bored_card {
         width: 16.875rem;
+        height: 18.75rem;
     }
     .section_1 {
         width: 18.875rem;
     }
-  }
+}
